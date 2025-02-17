@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="Accounts" method="GET">
+                <input type="hidden" value="getAll" name="action">
+                Get all accounts <input type="submit" value="GET">
+            </form>
+        </div>
+        <div>
+            <form action="Accounts" method="GET">
+                <input type="hidden" value="filter" name="action">
+                Select type 
+                <select name="roleId">
+                    <option value="2">Student</option> 
+                    <option value="1">Admin</option>
+                </select>
+                <input type="submit" value="Filter">
+            </form>
+        </div>
+        <div>
+            <form action="Accounts" method="GET">
+                <input type="hidden" value="adesc" name="action">
+                Get asc or desc 
+                <input type="radio" name="ops" value="asc"> ASCENDING
+                <input type="radio" name="ops" value="desc"> DESCENDING
+                <input type="submit" value="GET">
+            </form>
+        </div>
+    </body>
+</html>

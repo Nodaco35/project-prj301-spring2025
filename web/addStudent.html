@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center><h2>--------ADDING STUDENT--------</h2></center>
+    
+    
+    <div>
+        <form action="students" method="GET">
+            <input type="hidden" name="action" value="add">
+            <table>
+                <tr>
+                    <td>Student ID</td>
+                    <td><input type="text" name="stuId"></td>
+                </tr>
+                
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="fName"></td>
+                </tr>
+                
+                <tr>
+                    <td>Birth day</td>
+                    <td><input type="date" name="bDay"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" checked="" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                        <input type="radio" name="gender" value="Other"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td style="align-content: flex-start"><div>English</div></td> 
+                    <td>
+                        <input type="checkbox" name="English" value="English 1" >
+                        <label>English 1</label>
+                        <br>
+                        <input type="checkbox" name="English" value="English 2">
+                        <label>English 2</label>
+                        <br>
+                        <input type="checkbox" name="English" value="English 3">
+                        <label>English 3</label>
+                        <br>
+                        <input type="checkbox" name="English" value="English 4">
+                        <label>English 4</label>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Specialization</td>
+                    <td>
+                        <select id="specId" name="specId">
+                            <option value="1">SE</option>
+                            <option value="2">IA</option>
+                            <option value="3">AI</option>
+                            <option value="4">IB</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr><td></td><td><input type="submit" value="ADD"></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

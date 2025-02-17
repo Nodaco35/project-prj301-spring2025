@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="Accounts" method="GET">
+                <input type="hidden" name="action" value="add">
+                <table>
+                    <tr>
+                        <td>Account ID</td>
+                        <td><input type="type" name="user"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="pass"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <select id = "choice" name = "choice">
+                                <option value="1">Admin</option>
+                                <option value="2" selected="">Student</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="ADD"></td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+  
+    </body>
+</html>

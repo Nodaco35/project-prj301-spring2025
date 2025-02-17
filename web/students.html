@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="students" method="GET">
+                <input type="hidden" name="action" value="getAll">
+                Get all student: <input type="submit" value="GET">
+            </form>
+        </div>
+        <div>
+            <form action="students" method="GET">
+                <input type="hidden" name="action" value="searchByName">
+                Search by name: 
+                <input type="text" name="searchingName">
+                <input type="submit" value="SEARCH">
+            </form>
+        </div>
+        <div>
+            <form action="students" method="GET">
+                <input type="hidden" name="action" value="orderByGender">
+                Search by name: 
+                <input type="radio" value="Male" name="gender" checked=""> Male
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+
+        
+    </body>
+</html>
