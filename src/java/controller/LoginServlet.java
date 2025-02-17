@@ -58,19 +58,28 @@ public class LoginServlet extends HttpServlet {
            out.println("<h2>Error</h2>");
            
        } else if(account !=null && account.getRoleId() == 1) {
-           out.println("<h1>Hello Admin</h1>");
-          out.println("<h2>UserName: " + username + "</h2>");
-          out.println("<h2>Password: " + password + "</h2>");
+//           out.println("<h1>Hello Admin</h1>");
+//          out.println("<h2>UserName: " + username + "</h2>");
+//          out.println("<h2>Password: " + password + "</h2>");
+            request.setAttribute("roleId",account.getRoleId() );
+            request.setAttribute("accountId",account.getAccountId() );
+            request.setAttribute("pass",account.getPassword() );
+            request.getRequestDispatcher("welcome.jsp").forward(request, response);
           
        }  else if(account !=null && account.getRoleId() == 2) {
-           out.println("<h1>Hello Student</h1>");
-          out.println("<h2>UserName: " + username + "</h2>");
-          out.println("<h2>Password: " + password + "</h2>");
-                 
+//           out.println("<h1>Hello Student</h1>");
+//          out.println("<h2>UserName: " + username + "</h2>");
+//          out.println("<h2>Password: " + password + "</h2>");
+            request.setAttribute("roleId", account.getRoleId());
+            request.setAttribute("accountId",account.getAccountId() );
+            request.setAttribute("pass",account.getPassword() );
+            request.setAttribute("ac",account);
+            request.getRequestDispatcher("welcome.jsp").forward(request, response);
+            
 
        }else{
-           out.println("<h2>ERROR: Not match</h2>");
-
+           request.setAttribute("error", "Cannot find users");
+           request.getRequestDispatcher("index.jsp").forward(request, response);
        }
        
    }
