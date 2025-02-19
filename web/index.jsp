@@ -32,10 +32,11 @@
             
             <% String error = (String)request.getAttribute("error") ;
                 if(error!=null)  {
+                    
             %>
                 <tr>
-                    <td></td>
-                    <td style="color: red"><% out.print(error); %></td>
+                    <td><% out.print("Error: "); %></td>
+                    <td><p style="font-style: italic;display: inline"><% out.print(error); %></p></td>
                 </tr>
             <% }%>
             </table>
