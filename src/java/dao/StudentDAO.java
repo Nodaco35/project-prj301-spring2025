@@ -33,7 +33,7 @@ public class StudentDAO {
                         rs.getString("English2"),
                         rs.getString("English3"),
                         rs.getString("English4"),
-                        rs.getString("Specialization")
+                        rs.getString("SpecializationID")
                 );
                 students.add(student);
             }
@@ -67,7 +67,7 @@ public class StudentDAO {
                         rs.getString("English2"),
                         rs.getString("English3"),
                         rs.getString("English4"),
-                        rs.getString("Specialization")
+                        rs.getString("SpecializationID")
                 );
 
             }
@@ -101,7 +101,7 @@ public class StudentDAO {
                         rs.getString("English2"),
                         rs.getString("English3"),
                         rs.getString("English4"),
-                        rs.getString("Specialization")
+                        rs.getString("SpecializationID")
                 );
                 students.add(student);
             }
@@ -135,7 +135,7 @@ public class StudentDAO {
                         rs.getString("English2"),
                         rs.getString("English3"),
                         rs.getString("English4"),
-                        rs.getString("Specialization")
+                        rs.getString("SpecializationID")
                 );
                 students.add(student);
             }
@@ -161,7 +161,7 @@ public class StudentDAO {
                                     ,[English2]
                                     ,[English3]
                                     ,[English4]
-                                    ,[Specialization])
+                                    ,[SpecializationID])
                               VALUES
                                     (?,?,?,?,?,?,?,?,?)
                          """;

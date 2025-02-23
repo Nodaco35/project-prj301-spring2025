@@ -83,11 +83,12 @@ public class StudentServlet extends HttpServlet {
             String specId = request.getParameter("specId");
             //out.print(" " + eng[0] + " " + eng[1] + " " + eng[2] + " " + eng[3] + " ");
             Student stuAdd = new Student(stuID, fName, bDay, gender, eng[0], eng[1], eng[2], eng[3], specId);
+            out.print(stuAdd);
             stuAdd = StudentDAO.addingStudent(stuAdd);
             if (stuAdd != null) {
                 request.getRequestDispatcher("students.html").forward(request, response);
             } else {
-                out.print("ERROR");
+                out.print("  ERROR");
             }
         } else if (action.equals("view")) {
             String stuId = request.getParameter("studentId");
